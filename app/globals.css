@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Fontes */
+  --font-text: var(--font-inter), "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-inter), "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: var(--font-manrope), "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  /* Tipografia */
+  --color-text: #122534;
+  --color-text-muted: #5A6F7A;
+  --color-text-faint: #93A3AE;
+
+  /* Superfícies */
+  --color-background: #F4F8FB;
+  --color-surface: #FFFFFF;
+  --color-border: #DDE7F0;
+  --color-border-strong: #2E5E8A;
+
+  /* Primárias */
+  --color-primary: #1F4E79;
+  --color-primary-strong: #163B5D;
+  --color-primary-soft: #A8C4DB;
+
+  /* Status */
+  --color-success: #2F9E72;
+  --color-error: #D94C4C;
+  --color-warning: #E7A93B;
+
+  /* Módulos */
+  --color-alunos: #EAF5FF;
+  --color-cursos: #DFF7F1;
+  --color-funcionarios: #FFF2CF;
+  --color-matriculas: #E6EEF9;
+
+  /* Ícones */
+  --color-icon: #4A86D6;
+
+  /* Tamanho da fonte */
+  --text-h1: 2.5rem;
+  --text-h2: 1.75rem;
+  --text-h3: 1.5rem;
+  --text-body: 1rem;
+  --text-label: 1rem;
+  --text-caption: 0.75rem;
+  --text-data: 0.75rem;
+
+  /* Peso da fonte */
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-h3: 600;
+  --font-weight-body: 400;
+  --font-weight-label: 400;
+  --font-weight-caption: 400;
+  --font-weight-data: 400;
+
+  /* Espaçamento */
+  --spacing-xs: 2.5rem;
+  --spacing-sm: 1.25rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 2.5rem;
+  --spacing-3xl: 3rem;
+
+  /* Raios */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 1.75rem;
+
+  /* Breaking Points */
+  --breakpoint-tablet: 640px;
+  --breakpoint-desktop: 1024px;
+}
