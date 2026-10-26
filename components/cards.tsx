@@ -1,30 +1,45 @@
+import { LockKeyhole, User } from "lucide-react";
+
 export default function LoginCard() {
   return (
-    <div className="bg-surface border-primary border-strong rounded-lg p-4 shadow-md">
-      <div className="text-primary text-lg font-semibold mb-2">
-        <h1 className="text-h1 font-bold mb-4">Login</h1>
-      </div>
-      <div className="flex flex-col space-y-4">
-        <input
-          type="text"
-          placeholder="Username"
-          className="border border-border rounded-sm p-md focus:outline-none "
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          className="bg-background border border-border rounded-sm p-md focus:outline-none"
-        />
-      </div>
-      <div className="flex justify-between items-center mt-4">
-        <div></div>
-        <div className="flex flex-col space-y-2">
-          <p className="text-primary text-sm cursor-pointer hover:underline">
-            Forgot Password?
-          </p>
-          <p className="text-primary text-sm cursor-pointer hover:underline">
-            Create Account
-          </p>
+    <div className="flex min-h-screen items-center justify-center bg-background">
+      <div className="flex h-[70vh] w-[80%] max-w-[720px] flex-col overflow-hidden rounded-lg border border-border bg-surface shadow-md">
+        <div className="flex w-full flex-1 items-center justify-center border-b border-border bg-border-strong">
+          <div className="flex flex-col items-center justify-center gap-sm">
+            <h1 className="text-h1 font-bold text-surface">Login</h1>
+            <p className="text-body text-surface">Sign in to your account</p>
+          </div>
+        </div>
+
+        <div className="flex w-full flex-2 flex-col justify-center gap-lg p-md">
+          <div className="flex flex-col gap-md">
+            <label className="flex h-12 items-center gap-sm rounded-sm border border-border bg-background px-md py-sm  hover:border-icon hover:border-2">
+              <User size={18} className="text-primary" />
+              <input
+                type="text"
+                placeholder="Username"
+                className="h-12 border-0 bg-transparent text-text placeholder:text-text-muted focus:outline-none"
+              />
+            </label>
+
+            <label className="flex h-12 items-center gap-sm rounded-sm border border-border bg-background px-md py-sm hover:border-icon hover:border-2">
+              <LockKeyhole size={18} className="text-primary" />
+              <input
+                type="password"
+                placeholder="Password"
+                className="h-12 border-0 bg-transparent text-text placeholder:text-text-muted focus:outline-none"
+              />
+            </label>
+          </div>
+
+          <div className="flex items-center justify-between">
+            <button
+              type="button"
+              className="cursor-pointer text-caption text-primary hover:underline"
+            >
+              Forgot password?
+            </button>
+          </div>
         </div>
       </div>
     </div>

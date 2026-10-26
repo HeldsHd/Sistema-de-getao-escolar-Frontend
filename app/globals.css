@@ -2,40 +2,46 @@
 
 @theme inline {
   /* Fontes */
-  --font-text: var(--font-inter), "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  --font-sans: var(--font-inter), "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  --font-heading: var(--font-manrope), "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  --font-mono: var(--font-jetbrains-mono), "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --font-text:
+    var(--font-inter), "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-sans:
+    var(--font-inter), "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-heading:
+    var(--font-manrope), "Segoe UI", "Roboto", "Helvetica Neue", Arial,
+    sans-serif;
+  --font-mono:
+    var(--font-jetbrains-mono), "SFMono-Regular", Consolas, "Liberation Mono",
+    Menlo, monospace;
 
   /* Tipografia */
   --color-text: #122534;
-  --color-text-muted: #5A6F7A;
-  --color-text-faint: #93A3AE;
+  --color-text-muted: #5a6f7a;
+  --color-text-faint: #93a3ae;
 
   /* Superfícies */
-  --color-background: #F4F8FB;
-  --color-surface: #FFFFFF;
-  --color-border: #DDE7F0;
-  --color-border-strong: #2E5E8A;
+  --color-background: #f4f8fb;
+  --color-surface: #ffffff;
+  --color-border: #dde7f0;
+  --color-border-strong: #2e5e8a;
 
   /* Primárias */
-  --color-primary: #1F4E79;
-  --color-primary-strong: #163B5D;
-  --color-primary-soft: #A8C4DB;
+  --color-primary: #1f4e79;
+  --color-primary-strong: #163b5d;
+  --color-primary-soft: #a8c4db;
 
   /* Status */
-  --color-success: #2F9E72;
-  --color-error: #D94C4C;
-  --color-warning: #E7A93B;
+  --color-success: #2f9e72;
+  --color-error: #d94c4c;
+  --color-warning: #e7a93b;
 
   /* Módulos */
-  --color-alunos: #EAF5FF;
-  --color-cursos: #DFF7F1;
-  --color-funcionarios: #FFF2CF;
-  --color-matriculas: #E6EEF9;
+  --color-alunos: #eaf5ff;
+  --color-cursos: #dff7f1;
+  --color-funcionarios: #fff2cf;
+  --color-matriculas: #e6eef9;
 
   /* Ícones */
-  --color-icon: #4A86D6;
+  --color-icon: #4a86d6;
 
   /* Tamanho da fonte */
   --text-h1: 2.5rem;
@@ -56,8 +62,8 @@
   --font-weight-data: 400;
 
   /* Espaçamento */
-  --spacing-xs: 2.5rem;
-  --spacing-sm: 1.25rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
@@ -76,4 +82,18 @@
   /* Breaking Points */
   --breakpoint-tablet: 640px;
   --breakpoint-desktop: 1024px;
+
+  --width-divider: 98%;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
 }
