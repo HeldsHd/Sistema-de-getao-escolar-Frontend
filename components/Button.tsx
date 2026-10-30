@@ -1,6 +1,7 @@
 import { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 
+
 interface Props extends ComponentProps<"button"> {
   variant?: "primary" | "secondary" | "danger" | "ghost";
 }
